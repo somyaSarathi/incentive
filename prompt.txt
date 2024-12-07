@@ -1,0 +1,30 @@
+Generate {} random titles and descriptions for Azure IT Requests. These requests usually involve users asking for help with connecting to Power BI servers, accessing Arcos servers, or linking datasets(ADX, API, DataBricks, SharePoint, etc) to Power BI. Ensure the output has some intentional spelling mistakes or incorrect capitalization to make it appear more human-like.
+
+Make It Human-Like:
+- Add small spelling mistakes or incorrect capitalization to mimic natural typing errors. Examples:
+    - Use “cant” instead of “can’t,” “Pls” instead of “Please,” or “acess” instead of “access.”
+- Write casually, as if from frustrated users, using informal phrases like:
+    - “I keep getting this weird error.”
+    - “Can someone fix this asap?”
+    - “I think I need permissions for this.”
+
+Provide the response in JSON format only. Here’s the expected structure:
+
+```json
+[
+    {
+        "title": "title 1",
+        "description": "descripton 1"
+    },
+    {
+        "title": "title 2",
+        "description": "descripton 2"
+    },
+    {
+        "title": "title 3",
+        "description": "descripton 3"
+    }
+]
+```
+
+NOTE: FOLLOW JSON FORMATTING STRICTLY.
