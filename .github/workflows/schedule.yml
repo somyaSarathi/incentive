@@ -1,0 +1,38 @@
+name: Scheduled IT Request Generator
+
+on:
+  schedule:
+    # Runs at 11:00 AM IST on every weekday
+    - cron: '30 5 * * 1-5'
+  # Optional: Allow manual trigger through GitHub UI
+  workflow_dispatch:
+
+jobs:
+  generate-requests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.8'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run script
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        POWER_AUTOMATE_API_VERSION: ${{ secrets.POWER_AUTOMATE_API_VERSION }}
+        POWER_AUTOMATE_SIG: ${{ secrets.POWER_AUTOMATE_SIG }}
+        POWER_AUTOMATE_SP: ${{ secrets.POWER_AUTOMATE_SP }}
+        POWER_AUTOMATE_SV: ${{ secrets.POWER_AUTOMATE_SV }}
+        POWER_AUTOMATE_URL: ${{ secrets.POWER_AUTOMATE_URL }}
+        REQUEST_USERS: ${{ secrets.REQUEST_USERS }}
+      run: python main.py
