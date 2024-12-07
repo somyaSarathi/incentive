@@ -1,6 +1,6 @@
 # IT Request Generator
 
-Copyright (C) 2024
+Copyright (C) 2024 SOMYA SARATHI SAMAL
 
 This program generates and processes simulated IT service desk requests using Google's Gemini AI. It creates realistic support tickets and submits them through Power Automate for processing.
 
@@ -86,7 +86,8 @@ Generates JSON tickets:
 ```json
 [
   {
-    "request_description": "AI-generated description",
+    "title": "AI-generated title"
+    "description": "AI-generated description",
     "delay": 45,
     "request_reported_by": "user1"
   }
