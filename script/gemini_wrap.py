@@ -17,7 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import os
 import google.generativeai as genai
-from decorator import rate_limit
+from script.decorator import rate_limit
 
 
 class Gemini:

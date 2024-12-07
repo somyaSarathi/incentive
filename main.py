@@ -16,7 +16,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 from random import randint
-from it_requests import create_it_request, run_power_automate
+from script.it_requests import create_it_request, run_power_automate
 
 def main():
     """Generate and submit IT service desk requests.

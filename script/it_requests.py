@@ -22,8 +22,8 @@ import requests
 import numpy as np
 import pandas as pd
 
-from gemini_wrap import Gemini
-from config import PROMPT, USERS, URL
+from script.gemini_wrap import Gemini
+from script.config import PROMPT, USERS, URL
 
 
 def create_it_request(num: int = 6, timeout: int = 100) -> str:
