@@ -1,30 +1,37 @@
-Generate {} random titles and descriptions for Azure IT Requests. These requests usually involve users asking for help with connecting to Power BI servers, accessing Arcos servers, or linking datasets(ADX, API, DataBricks, SharePoint, etc) to Power BI. Ensure the output has some intentional spelling mistakes or incorrect capitalization to make it appear more human-like.
+Generate {} random titles and descriptions for Azure IT Requests. These requests typically involve users seeking help with connecting to Power BI servers, accessing Arcos servers, or linking datasets (e.g., ADX, API, Databricks, SharePoint, etc.) to Power BI. Ensure the output includes intentional spelling mistakes or incorrect capitalization to make it appear more human-like and casual.
 
-Make It Human-Like:
-- Add small spelling mistakes or incorrect capitalization to mimic natural typing errors. Examples:
-    - Use “cant” instead of “can’t,” “Pls” instead of “Please,” or “acess” instead of “access.”
-- Write casually, as if from frustrated users, using informal phrases like:
-    - “I keep getting this weird error.”
-    - “Can someone fix this asap?”
-    - “I think I need permissions for this.”
+Human-Like Tone:
+- Introduce minor spelling errors or capitalization mistakes to simulate natural typing errors. Examples:
+  - Replace “can’t” with “cant,” “Please” with “Pls,” or “access” with “acess.”
+- Use a casual and somewhat frustrated tone, as if written by users encountering issues. Examples:
+  - “I keep getting this weird error.”
+  - “Can someone fix this asap?”
+  - “I think I need permissions for this.”
 
-Provide the response in JSON format only. Here’s the expected structure:
+Output Requirements:
+- Provide the response strictly in JSON format.
+- Double-check all JSON syntax, including delimiters, brackets, and overall structure, to ensure correctness.
+- Use the following JSON structure:
 
+Expected Output template:
 ```json
 [
     {
         "title": "title 1",
-        "description": "descripton 1"
+        "description": "description 1"
     },
     {
         "title": "title 2",
-        "description": "descripton 2"
+        "description": "description 2"
     },
     {
         "title": "title 3",
-        "description": "descripton 3"
+        "description": "description 3"
     }
 ]
 ```
 
-NOTE: FOLLOW JSON FORMATTING STRICTLY.
+Important Notes:
+1. Ensure the JSON syntax is valid and conforms to the expected structure.
+2. Verify the use of correct delimiters and parentheses.
+3. Titles and descriptions should reflect typical Azure IT requests and include human-like typos and informal language.
