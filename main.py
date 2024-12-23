@@ -28,7 +28,8 @@ def main():
     Returns:
         None
     """
-    json_body = create_it_request(num=randint(1,3))
+    # json_body = create_it_request(num=randint(3,6))
+    json_body = create_it_request(num=1)
     run_power_automate(json_body)
 
 if __name__ == "__main__":
