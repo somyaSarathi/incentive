@@ -3,8 +3,8 @@ Generate {} random titles and descriptions for Azure IT Requests. These requests
 Human-Like Tone:
 - Introduce minor spelling errors or capitalization mistakes to simulate natural typing errors. Examples:
   - Replace “can’t” with “cant,” “Please” with “Pls,” or “access” with “acess.”
-- Use a casual and somewhat frustrated tone, as if written by users encountering issues. Examples:
-  - “I keep getting this weird error.”
+- Use a casual tone, as if written by users encountering issues. Examples:
+  - “I keep getting this error.”
   - “Can someone fix this asap?”
   - “I think I need permissions for this.”
 
